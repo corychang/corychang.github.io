@@ -7,8 +7,8 @@ $(document).ready(function() {
 	$("body").prepend(Menu());
 
 	// Content for the Mortis modal.
-	var image1Top = $("<img src='assets/mortis.png' alt='Colored image of Death next to a boy and his turtle.'>");
-	var image1Bottom = $("<img src='assets/mortis_bw.png' alt='Black and white image of Death next to a boy and his turtle.'>");
+	var image1Top = $("<img src='assets/mortis.jpg' alt='Colored image of Death next to a boy and his turtle.'>");
+	var image1Bottom = $("<img src='assets/mortis_bw.jpg' alt='Black and white image of Death next to a boy and his turtle.'>");
 
 	var modal1Content = [
 		$("<p>Under Construction</p>"),
@@ -21,15 +21,15 @@ $(document).ready(function() {
 								  "A puzzle platformer where the central game mechanic revolves around transfering life between objects in the scene. I worked as the project lead on this game.");
 
 	// Content for the Outfit Swap modal.
-	var image2Top = $("<img src='assets/outfit_swap.png' alt='Colored image of burger flipper in the oval office.'>");
-	var image2Bottom = $("<img src='assets/outfit_swap_bw.png' alt='Black and white image of a burger flipper in the oval office.'>");
+	var image2Top = $("<img src='assets/outfit_swap.jpg' alt='Colored image of burger flipper in the oval office.'>");
+	var image2Bottom = $("<img src='assets/outfit_swap_bw.jpg' alt='Black and white image of a burger flipper in the oval office.'>");
 
 	var modal2Button = Button("https://www.andrew.cmu.edu/user/lwzhang/outfitter/index.html",
 							  "Play Now", "Opening...");
 	modal2Button.css("float", "right");
 	modal2Button.css("margin-right", "20px");
 
-	var image2_1 = $("<img src='assets/outfit_swap_screen.png' alt='Image of the player talking to Hobo Ozzie in a fast food restaurant.'>");
+	var image2_1 = $("<img src='assets/outfit_swap_screen.jpg' alt='Image of the player talking to Hobo Ozzie in a fast food restaurant.'>");
 
 	var modal2Content = [
 		$("<p>A link to the game is above. In the game, the player explores the world, talking to other characters to find out what they like or dislike. The dialogue gives the player hints as to what role the NPC really wants to fill. If the player is currently a role that can swap with the NPC, the player can swap and change roles. The ultimate goal for the player is to go from burger flipper to president, through one of multiple paths.</p>"),
@@ -46,15 +46,15 @@ $(document).ready(function() {
 								  "A puzzle adventure game where the player swaps roles with other players with the goal of becoming the president. I worked as a programmer on the project.");
 
 	// Content for the EMT Game modal.
-	var image3Top = $("<img src='assets/05_818.png' alt='Colored image of a drunk call scene.'>");
-	var image3Bottom = $("<img src='assets/05_818_bw.png' alt='Black and white image of a drunk call scene.'>");
+	var image3Top = $("<img src='assets/05_818.jpg' alt='Colored image of a drunk call scene.'>");
+	var image3Bottom = $("<img src='assets/05_818_bw.jpg' alt='Black and white image of a drunk call scene.'>");
 
 	var modal3Button = EMTButton();
 	modal3Button.css("float", "right");
 	modal3Button.css("margin-right", "20px");
 
-	var image3_1 = $("<img src='assets/emt_game.png' alt='An EMT scene of an ankle injury.'>");
-	var image3_2 = $("<img src='assets/emt_game_feedback.png' alt='A sample score scene at the end of the ankle call.'>");
+	var image3_1 = $("<img src='assets/emt_game.jpg' alt='An EMT scene of an ankle injury.'>");
+	var image3_2 = $("<img src='assets/emt_game_feedback.jpg' alt='A sample score scene at the end of the ankle call.'>");
 
 	var modal3Content = [
 		$("<p>One of the biggest problems facing EMTs is that the first few experiences on a scene can be extremely nerve-wracking. Also, facing a life-or-death situation can be scary for EMTs regardless of experience. Our simulation is meant to help give EMTs more experience and make it easier for them to deal with unexpected situations.</p>"),

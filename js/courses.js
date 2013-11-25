@@ -6,15 +6,15 @@ $(document).ready(function() {
 	$("body").prepend(Menu());
 
 	// Content for the 15-462 modal.
-	var image1Top = $("<img src='assets/15_462.png' alt='Colored image of water simulation.'>");
-	var image1Bottom = $("<img src='assets/15_462_bw.png' alt='Black and white image of water simulation.'>");
+	var image1Top = $("<img src='assets/15_462.jpg' alt='Colored image of water simulation.'>");
+	var image1Bottom = $("<img src='assets/15_462_bw.jpg' alt='Black and white image of water simulation.'>");
 
-	var slider1_1 = ImageSlider($("<img src='assets/dinosaur_before.png' alt='Dinosaur model with 0 subdivisions.'>"),
-								$("<img src='assets/dinosaur_after.png' alt='Dinosaur model with 6 subdivisions.'>"));
-	var slider1_2 = ImageSlider($("<img src='assets/toy_before.png' alt='Scene before any processing.'>"),
-								$("<img src='assets/toy_after.png' alt='Scene with non-photo realistic shaders applied.'>"));
-	var slider1_3 = ImageSlider($("<img src='assets/stacks_before.png' alt='Scene of cubes and spheres.'>"),
-								$("<img src='assets/stacks_after.png' alt='Ray-traced scene of cubes and spheres.'>"));
+	var slider1_1 = ImageSlider($("<img src='assets/dinosaur_before.jpg' alt='Dinosaur model with 0 subdivisions.'>"),
+								$("<img src='assets/dinosaur_after.jpg' alt='Dinosaur model with 6 subdivisions.'>"));
+	var slider1_2 = ImageSlider($("<img src='assets/toy_before.jpg' alt='Scene before any processing.'>"),
+								$("<img src='assets/toy_after.jpg' alt='Scene with non-photo realistic shaders applied.'>"));
+	var slider1_3 = ImageSlider($("<img src='assets/stacks_before.jpg' alt='Scene of cubes and spheres.'>"),
+								$("<img src='assets/stacks_after.jpg' alt='Ray-traced scene of cubes and spheres.'>"));
 	var modal1Content = [
 		$("<p>This course covers the fundamentals of computer graphics, where the labs are taugh through OpenGL. We cover many topics such as affine transformations, BRDF, radiosity, and global illumination. The first lab covers the basics of programming in OpenGL.</p>"),
 		$("<p>Our second lab goes over loop subdivision. My implementation uses a winged edge data structure which contains some information about vertices, edges, and faces, while storing the others. Below is a comparison of a stegosaurus model without subdivision, and one with six subdivisions which runs in under four seconds.</p>"),
@@ -37,8 +37,8 @@ $(document).ready(function() {
 								  "A comprehensive introduction to computer graphics. Topics include image processing, geometric transformations, shading, and ray tracing.");
 
 	// Content for the 05-818 modal.
-	var image2Top = $("<img src='assets/05_818.png' alt='Colored image of a drunk call scene.'>");
-	var image2Bottom = $("<img src='assets/05_818_bw.png' alt='Black and white image of a drunk call scene.'>");
+	var image2Top = $("<img src='assets/05_818.jpg' alt='Colored image of a drunk call scene.'>");
+	var image2Bottom = $("<img src='assets/05_818_bw.jpg' alt='Black and white image of a drunk call scene.'>");
 
 	var modal2Button = EMTButton();
 	modal2Button.css("float", "right");

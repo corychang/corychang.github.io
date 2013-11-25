@@ -145,7 +145,9 @@ function Carousel(itemList) {
 	var indicators = $("<ol class='carousel-indicators'></ol>");
 	for (var i = 0; i < itemList.length; i++) {
 		var active = i === 0 ? " class='active'" : "";
-		indicators.append($("<li data-target='#carousel-example-generic' data-slide-to='" + i + "'" + active + "></li>"))
+		var indicatorElement = $("<li data-target='#carousel-example-generic' data-slide-to='" + i + "'" + active + "></li>");
+		indicatorElement.css("margin-right", "5px");
+		indicators.append(indicatorElement);
 	}
 	carousel.append(indicators);
 

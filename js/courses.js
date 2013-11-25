@@ -67,6 +67,7 @@ $(window).load(function() {
 	$("#mainContent").append(carousel);
 	carousel.carousel();
 
+	//$("#carousel-example-generic").height(Math.min($(window).height() - 120, 551));
 	resizeAll(carousel_list);
 	modal1.on('shown.bs.modal', function() {
 		resizeSliders(slider_list1, modal1.find(".modal-body").width());
@@ -76,6 +77,7 @@ $(window).load(function() {
 });
 
 $(window).resize(function() {
+	//$("#carousel-example-generic").height(Math.min($(window).height() - 120, 551));
 	resizeAll(carousel_list);
 	resizeSliders(slider_list1, $("#myModal1").find(".modal-body").width());
 });

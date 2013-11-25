@@ -83,6 +83,7 @@ $(window).load(function() {
 	$("#mainContent").append(carousel);
 	carousel.carousel();
 
+	//$("#carousel-example-generic").height(Math.min($(window).height() - 120, 551));
 	resizeAll(carousel_list);
 	modal2.on('shown.bs.modal', function() {
 		for (var i = 0; i < image_list2.length; i++) {
@@ -99,6 +100,7 @@ $(window).load(function() {
 });
 
 $(window).resize(function() {
+	//$("#carousel-example-generic").height(Math.min($(window).height() - 120, 551));
 	resizeAll(carousel_list);
 	for (var i = 0; i < image_list2.length; i++) {
 		image_list2[i].width($("#myModal2").find(".modal-body").width());

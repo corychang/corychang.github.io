@@ -2,7 +2,8 @@ var carousel_list;
 var image_list2;
 var image_list3;
 
-$(document).ready(function() {
+$(window).load(function() {
+//$(document).ready(function() {
 	$("body").prepend(MenuBuffer());
 	$("body").prepend(Menu());
 

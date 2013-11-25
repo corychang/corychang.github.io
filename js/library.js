@@ -12,8 +12,10 @@ var emtLinux = "EMT-zip-files/EMT-1.0-linux.tar.bz2";
 /*
  * Resize all of the images inside of the carousel.
  */
-function resizeAll(list) {
+function resizeAll(list, w) {
 	var width = $("#carousel-example-generic").width();
+	if (w !== undefined)
+		width = w;
 	for (var i = 0; i < list.length; i++) {
 		list[i].resize(width);
 	}

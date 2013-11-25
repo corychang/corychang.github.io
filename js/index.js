@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(window).load(function() {
+//$(document).ready(function() {
 	$("body").prepend(MenuBuffer());
 	$("body").prepend(Menu());
 

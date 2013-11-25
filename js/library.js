@@ -18,7 +18,6 @@ function resizeAll(list, w) {
 	//if (w !== undefined)
 	//	width = w;
 	for (var i = 0; i < list.length; i++) {
-		console.log(list[i].resize);
 		list[i].resize(width, height);
 	}
 }
@@ -210,7 +209,6 @@ function CreateHoverImageForModal(imageTop, imageBottom, modal) {
 	);
 
 	ans.resize = function(width, height) {
-		console.log(width, height);
 		imageTop.width(width);
 		imageBottom.width(width);
 		//if (height !== undefined && height < imageTop.height()) {

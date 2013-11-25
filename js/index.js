@@ -10,7 +10,7 @@ $(document).ready(function() {
 	$("#mainContent").append(welcome);
 
 	var content = $("<div></div>");
-	content.append($("<p>Hi, I'm Cory, a Computer Science and Human Computer Interaction double major at Carnegie Mellon University. I have a passion for solving problems and making solutions.</p>"));
+	content.append($("<p>Hi, I'm Cory, a Computer Science and Human Computer Interaction double major at Carnegie Mellon University. I have a passion for solving problems and making awesome things.</p>"));
 	content.append($("<p>In my free time, I enjoy working on game projects. A sampling of my work can be found under the \"Games\" tab. A selection of interesting courses that I've taken can also be found under \"Courses.\"</p>"));
 	content.append($("<p>I also really enjoy film. Currently, my favorite movie is <i>The Shawshank Redemption</i>, and my favorite TV series is <i>The Wire</i>.</p>"));
 	content.append($("<p>Contact: <a href='mailto:changcory@gmail.com'>changcory@gmail.com</a></p>"));

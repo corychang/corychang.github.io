@@ -14,10 +14,11 @@ var emtLinux = "EMT-zip-files/EMT-1.0-linux.tar.bz2";
  */
 function resizeAll(list, w) {
 	var width = $("#carousel-example-generic").width();
+	var height = $("#carousel-example-generic").height();
 	if (w !== undefined)
 		width = w;
 	for (var i = 0; i < list.length; i++) {
-		list[i].resize(width);
+		list[i].resize(width, height);
 	}
 }
 
@@ -207,9 +208,13 @@ function CreateHoverImageForModal(imageTop, imageBottom, modal) {
 		}
 	);
 
-	ans.resize = function(width) {
+	ans.resize = function(width, height) {
 		imageTop.width(width);
 		imageBottom.width(width);
+		if (height !== undefined && height < imageTop.height()) {
+			imageTop.height(height);
+			imageBottom.height(height);
+		}
 	}
 
 	ans.css("cursor", "pointer");

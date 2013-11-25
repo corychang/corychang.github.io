@@ -91,7 +91,7 @@ $(window).load(function() {
 	});
 	modal3.on('shown.bs.modal', function() {
 		for (var i = 0; i < image_list3.length; i++) {
-			image_list3[i].width($("#myModal3").find(".modal-body").width());
+			image_list3[i].width($("#myModal3").find(".modal-body").width() / 2);
 		}
 	});
 
@@ -104,6 +104,6 @@ $(window).resize(function() {
 		image_list2[i].width($("#myModal2").find(".modal-body").width());
 	}
 	for (var i = 0; i < image_list3.length; i++) {
-		image_list3[i].width($("#myModal3").find(".modal-body").width());
+		image_list3[i].width($("#myModal3").find(".modal-body").width() / 2);
 	}
 });

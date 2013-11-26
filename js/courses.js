@@ -18,7 +18,7 @@ $(window).load(function() {
 								$("<img src='assets/stacks_after.jpg' alt='Ray-traced scene of cubes and spheres.'>"));
 	var modal1Content = [
 		$("<p>This course covers the fundamentals of computer graphics, where the labs are taugh through OpenGL. We cover many topics such as affine transformations, BRDF, radiosity, and global illumination. The first lab covers the basics of programming in OpenGL.</p>"),
-		$("<p>Our second lab goes over loop subdivision. My implementation uses a winged edge data structure which contains some information about vertices, edges, and faces, while storing the others. Below is a comparison of a stegosaurus model without subdivision, and one with six subdivisions which runs in under four seconds.</p>"),
+		$("<p>Our second lab goes over loop subdivision. My implementation uses a winged edge data structure which contains some information about vertices, edges, and faces, while calculating the others. Below is a comparison of a stegosaurus model without subdivision, and one with six subdivisions which runs in under four seconds.</p>"),
 		slider1_1,
 		$("<br/>"),
 		$("<p>Our third lab covers non-photorealistic graphics achieved by applying shaders over a scene. The main effect is creating a dark outline around an object whose thickness is a function of the depth from the camera. We also implemented motion blur (not shown) which is achieved by maintaining a second buffer and forming an image through a linear combination of the two.</p>"),

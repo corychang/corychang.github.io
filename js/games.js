@@ -44,7 +44,7 @@ $(window).load(function() {
 	var hoverImage2 = CreateHoverImageForModal(image2Top, image2Bottom, modal2);
 	var image2 = new CarouselItem(hoverImage2,
 								  "Outfit Swap",
-								  "A puzzle adventure game where the player swaps roles with other players with the goal of becoming the president. I worked as a programmer on the project.");
+								  "A puzzle adventure game where the player swaps roles with other characters with the goal of becoming the president. I worked as a programmer on the project.");
 
 	// Content for the EMT Game modal.
 	var image3Top = $("<img src='assets/05_818.jpg' alt='Colored image of a drunk call scene.'>");

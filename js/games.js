@@ -21,6 +21,30 @@ $(window).load(function() {
 								  "Mortis",
 								  "A puzzle platformer where the central game mechanic revolves around transfering life between objects in the scene. I worked as the project lead on this game.");
 
+	// Content for Tommy Was Alone.
+	var image4Top = $("<img src='assets/tommywasalone.jpg' alt='Colored image of a cube world.'>");
+	var image4Bottom = $("<img src='assets/tommywasalone_bw.jpg' alt='Black and white image of a cube world.'>");
+
+	var modal4Button = TommyWasAloneButton();
+	modal4Button.css("float", "right");
+	modal4Button.css("margin-right", "20px");
+
+	var modal4Content = [
+		$("<p>As a final project for my 15-466: Game Programming class, my two teammates and I decided to create \"Tommy Was Alone.\" The goal was to create an interesting, minimalist experience while still inducing the shock and stress of a survival game.</p>"),
+		$("<p>The player must navigate a strange cube world where everything is made out of cubes. Unfortunately, touching an enemy will cause the player to lose. As the player progresses through the game, bits and pieces of the story are revealed to the player.</p>"),
+		$("<p>My specific contributions to the project include enemy movement behavior and A.I. I also worked on properly implementing the world rotations when moving to and from different sides of the cube. On the more artistic side, I contributed to some of the enemy placement, the script, enemy designs, and sound mixing.</p>"),
+		$("<p>Below is a playthrough of the entirety of our game.</p>"),
+		$("<div style='width: 640px; height: 360px; margin: 0 auto;'><iframe width='640' height='360' src='http://www.youtube.com/embed/r1utyXJJYXo' frameborder='0' allowfullscreen align='center'></iframe></div>"),
+	]
+
+	var modal4 = Modal("myModal4", "Tommy Was Alone", modal4Content, modal4Button);
+	var hoverImage4 = CreateHoverImageForModal(image4Top, image4Bottom, modal4);
+	var image4 = new CarouselItem(hoverImage4,
+								  "Tommy Was Alone",
+								  "A first person stealth survival game. I worked as a programmer on the project.");
+
+
+
 	// Content for the Outfit Swap modal.
 	var image2Top = $("<img src='assets/outfit_swap.jpg' alt='Colored image of burger flipper in the oval office.'>");
 	var image2Bottom = $("<img src='assets/outfit_swap_bw.jpg' alt='Black and white image of a burger flipper in the oval office.'>");
@@ -74,7 +98,7 @@ $(window).load(function() {
 
 	// TODO: Add I'm not Comfortable with This!!!!
 
-	carousel_list = [image1, image2, image3];
+	carousel_list = [image1, image4, image2, image3];
 	image_list2 = [image2_1];
 	image_list3 = [image3_1, image3_2];
 

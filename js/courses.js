@@ -6,6 +6,35 @@ $(window).load(function() {
 	$("body").prepend(MenuBuffer());
 	$("body").prepend(Menu());
 
+	// Content for 15-466.
+	var image3Top = $("<img src='assets/15_466.jpg' alt='Colored image of chess board.'>");
+	var image3Bottom = $("<img src='assets/15_466_bw.jpg' alt='Black and white image of chess board.'>");
+	var modal3Button = TommyWasAloneButton();
+	modal3Button.css("float", "right");
+	modal3Button.css("margin-right", "20px");
+
+	var modal3Content = [
+		$("<p>This course covers fundamental topics in game programming through the Unity engine. Beyong the labs, we also go over algorithms to solve game programming challenges such as sound simulation and learning behaviors.</p>"),
+		$("<p>In the first lab, we implemented steering behaviors to model movement for seeking, wandering, and flocking. In order to implement seeking, we gradually turn towards a target velocity to get to a goal. To model wandering, we imagine an invisible circle in front of each character and choose a random point on this circle. The characters then seek towards that point, updating the random point every frame. Finally, flocking is simulated by designating one character as the leader which wanders, while the others perform separation and cohesion, seeking the leader to move as a group. Obstacle avoidance is factored in to help create a more realistic effect so that characters don't hit things in the world.</p>"),
+		$("<p>Our second lab involved having ten characters which path find to a player. I split the world into an 8-connected, 200x200 grid and ran a weighted A* algorithm to compute all of the paths. These paths are recalculated every frame to account for the player moving, or for dynamic obstacles obstructing the paths.</p>"),
+		$("<p>My third lab is a checkers game with an A.I. The computer runs alpha-beta pruning to choose which move to make next. There is also networking to provide in-game chat. At the moment, the computer is the only one that talks to the player, but the server can handle multiple players chatting simultaneously.</p>"),
+		$("<p>Below is a video demonstrating the first three labs.</p>"),
+		$("<div style='width: 640px; height: 360px; margin: 0 auto;'><iframe width='640' height='360' src='http://www.youtube.com/embed/Rus5xqzbVpw' frameborder='0' allowfullscreen align='center'></iframe></div>"),
+		$("<br/>"),
+		$("<p>More information for my final project, \"Tommy Was Alone\" can be found on the \"Games\" tab. There is also a download link at the top.</p>"),
+	]
+
+	var modal3 = Modal("myModal3", "15-466: Game Programming", modal3Content, modal3Button);
+	var hoverImage3 = CreateHoverImageForModal(image3Top, image3Bottom, modal3);
+	var image3 = new CarouselItem(hoverImage3,
+								  "15-466: Game Programming",
+								  "This course covers many topics relevant to computer games, such as A.I., collision detection, networking, path finding, and much more. The class has a strong programming focus and is taught using the Unity engine.");
+
+
+
+
+
+
 	// Content for the 15-462 modal.
 	var image1Top = $("<img src='assets/15_462.jpg' alt='Colored image of water simulation.'>");
 	var image1Bottom = $("<img src='assets/15_462_bw.jpg' alt='Black and white image of water simulation.'>");
@@ -60,7 +89,7 @@ $(window).load(function() {
 	// TODO: Add 15-466: Game Programming!!!!!!!!!!!!
 
 	slider_list1 = [slider1_1, slider1_2, slider1_3];
-	carousel_list = [image1, image2];
+	carousel_list = [image3, image1, image2];
 
 	var carousel = Carousel(carousel_list);
 

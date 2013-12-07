@@ -9,6 +9,10 @@ var emtMac = "EMT-zip-files/EMT-1.0-mac.zip";
 var emtWin = "EMT-zip-files/EMT-1.0-win.zip";
 var emtLinux = "EMT-zip-files/EMT-1.0-linux.tar.bz2";
 
+var tommyWasAloneMac = "Tommy-Was-Alone-files/TommyWasAloneMac.zip";
+var tommyWasAloneWindows = "Tommy-Was-Alone-files/TommyWasAloneWindows.zip";
+var tommyWasAloneLinux = "Tommy-Was-Alone-files/TommyWasAloneLinux.zip";
+
 /*
  * Resize all of the images inside of the carousel.
  */
@@ -64,6 +68,28 @@ function EMTButton() {
 	}
 	if (os === "LINUX") {
 		link = emtLinux;
+		text = "Download for Linux";
+	}
+	return Button(link, text, "Downloading...");
+}
+
+/*
+ * Creates a download link for Tommy Was Alone.
+ */
+function TommyWasAloneButton() {
+	var os = DetectOS();
+	var link;
+	var text;
+	if (os === "MAC") {
+		link = tommyWasAloneMac;
+		text = "Download for Mac";
+	}
+	if (os === "WIN") {
+		link = tommyWasAloneWindows;
+		text = "Download for Windows";
+	}
+	if (os === "LINUX") {
+		link = tommyWasAloneLinux;
 		text = "Download for Linux";
 	}
 	return Button(link, text, "Downloading...");

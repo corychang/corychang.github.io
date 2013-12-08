@@ -1,0 +1,119 @@
+<level>
+	<width>1500</width>
+	<height>2100</height>
+
+	<camera>
+		<zoom>0.75</zoom>
+		<x>40</x>
+		<y>-500</y>
+	</camera>
+
+	<background>
+		<texture>Assets/level_mushroom/background</texture>
+	</background>
+
+	<music>Assets/SFX_Music/MortisNurse</music>
+
+	<door>
+		<key>door</key>
+		<x>40</x>
+		<y>-350</y>
+		<open>true</open>
+	</door>
+
+	<platforms>
+		<platform>
+			<x>25</x>
+			<y>0</y>
+			<texture>Assets/global/platform_small</texture>
+			<boundingHeight>210</boundingHeight>
+			<boundingWidth>304</boundingWidth>
+			<boundingOffsetX>29</boundingOffsetX>
+			<boundingOffsetY>55</boundingOffsetY>
+		</platform>
+
+		<platform>
+			<x>496</x>
+			<y>400</y>
+			<texture>Assets/global/platform_small</texture>
+			<boundingHeight>210</boundingHeight>
+			<boundingWidth>304</boundingWidth>
+			<boundingOffsetX>29</boundingOffsetX>
+			<boundingOffsetY>55</boundingOffsetY>
+		</platform>
+
+		<platform>
+			<x>1200</x>
+			<y>860</y>
+			<texture>Assets/global/platform_small</texture>
+			<boundingHeight>210</boundingHeight>
+			<boundingWidth>304</boundingWidth>
+			<boundingOffsetX>29</boundingOffsetX>
+			<boundingOffsetY>55</boundingOffsetY>
+		</platform>
+
+		<platform>
+			<x>555</x>
+			<y>1300</y>
+			<texture>Assets/global/platform_small</texture>
+			<boundingHeight>210</boundingHeight>
+			<boundingWidth>304</boundingWidth>
+			<boundingOffsetX>29</boundingOffsetX>
+			<boundingOffsetY>55</boundingOffsetY>
+		</platform>
+
+		<platform>
+			<x>70</x>
+			<y>1723</y>
+			<texture>Assets/global/platform_small</texture>
+			<boundingHeight>210</boundingHeight>
+			<boundingWidth>304</boundingWidth>
+			<boundingOffsetX>29</boundingOffsetX>
+			<boundingOffsetY>55</boundingOffsetY>
+		</platform>
+	</platforms>
+
+	<player>
+		<x>20</x>
+		<y>1285</y>
+		<texture>global/death_dave</texture>
+	</player>
+
+	<interactiveObjects>
+		<interactiveObject>
+			<alive>false</alive>
+			<x>525</x>
+			<y>250</y>
+			<key>mush1</key>
+			<texture>Assets/level_mushroom/mushroom_dead</texture>
+			<scale>0.8</scale>
+		</interactiveObject>
+
+		<interactiveObject>
+			<alive>false</alive>
+			<x>1200</x>
+			<y>700</y>
+			<key>mush2</key>
+			<texture>Assets/level_mushroom/mushroom_dead</texture>
+			<scale>0.8</scale>
+		</interactiveObject>
+
+		<interactiveObject>
+			<alive>false</alive>
+			<x>720</x>
+			<y>1142</y>
+			<key>mush3</key>
+			<texture>Assets/level_mushroom/mushroom_dead</texture>
+			<scale>0.8</scale>
+		</interactiveObject>
+
+		<interactiveObject>
+			<alive>true</alive>
+			<x>230</x>
+			<y>1550</y>
+			<key>mush4</key>
+			<texture>Assets/level_mushroom/mushroom_alive</texture>
+			<scale>0.8</scale>
+		</interactiveObject>
+	</interactiveObjects>
+</level>

@@ -1,0 +1,145 @@
+<level>
+	<width>1800</width>
+	<height>768</height>
+
+	<camera>
+		<zoom>0.75</zoom>
+	</camera>
+
+	<background>
+		<texture>Assets/level_hospital/background</texture>
+	</background>
+
+	<music>Assets/SFX_Music/Hospital</music>
+
+	<door>
+		<key>door</key>
+		<x>1485</x>
+		<y>450</y>
+		<open>false</open>
+	</door>
+
+	<platforms>
+		<platform>
+			<x>0</x>
+			<y>768</y>
+			<texture>Assets/global/platform_large</texture>
+			<boundingHeight>500</boundingHeight>
+			<boundingWidth>1100</boundingWidth>
+			<boundingOffsetX>0</boundingOffsetX>
+			<boundingOffsetY>100</boundingOffsetY>
+		</platform>
+		<platform>
+			<x>900</x>
+			<y>768</y>
+			<texture>Assets/global/platform_large</texture>
+			<boundingHeight>500</boundingHeight>
+			<boundingWidth>1100</boundingWidth>
+			<boundingOffsetX>0</boundingOffsetX>
+			<boundingOffsetY>100</boundingOffsetY>
+		</platform>
+	</platforms>
+
+	<player>
+		<x>20</x>
+		<y>768</y>
+		<texture>global/death_dave</texture>
+	</player>
+	
+	<heart_rate_monitor>
+		<x>900</x>
+		<y>650</y>
+		<key>heart_rate_monitor</key>
+		<texture>Assets/level_hospital/heart_rate_monitor</texture>
+		<scale>0.60</scale>
+		<behaviors>
+			<behavior requireAll="false">
+				<trigger type="LifeTrigger" objectToMonitor="patient2" triggerOnAlive="false"  />
+				<trigger type="LifeTrigger" objectToMonitor="patient2" triggerOnAlive="true"  />
+				<response type="HeartMonitorResponse" patientName="patient2"/>	
+			</behavior>
+		</behaviors>
+	</heart_rate_monitor>
+
+	<interactiveObjects>
+		<interactiveObject>
+			<alive>true</alive>
+			<x>425</x>
+			<y>615</y>
+			<key>patient1</key>
+			<texture>Assets/level_hospital/patient1</texture>
+			<scale>0.55</scale>
+			<states>
+				<sheet_width>5</sheet_width>
+				<sheet_height>6</sheet_height>
+				<alive_state>
+					<start>0</start>
+					<end>27</end>
+					<loop>true</loop>
+				</alive_state>
+				<dead_state>
+					<start>28</start>
+					<end>28</end>
+					<loop>true</loop>
+				</dead_state>
+			</states>
+		</interactiveObject>
+
+		<interactiveObject>
+			<alive>true</alive>
+			<x>985</x>
+			<y>605</y>
+			<key>patient2</key>
+			<texture>Assets/level_hospital/patient2</texture>
+			<scale>0.55</scale>
+			<states>
+				<sheet_width>2</sheet_width>
+				<sheet_height>4</sheet_height>
+				<alive_state>
+					<start>0</start>
+					<end>6</end>
+					<loop>true</loop>
+				</alive_state>
+				<dead_state>
+					<start>7</start>
+					<end>7</end>
+					<loop>true</loop>
+				</dead_state>
+			</states>
+		</interactiveObject>
+
+		<interactiveObject>
+			<alive>true</alive>
+			<x>1540</x>
+			<y>585</y>
+			<key>nurse</key>
+			<texture>Assets/level_hospital/nurse</texture>
+			<scale>0.37</scale>
+			<states>
+				<sheet_width>5</sheet_width>
+				<sheet_height>3</sheet_height>
+				<alive_state>
+					<start>0</start>
+					<end>0</end>
+					<loop>true</loop>
+				</alive_state>
+				<dead_state>
+					<start>13</start>
+					<end>13</end>
+					<loop>true</loop>
+				</dead_state>
+				<moving_state>
+					<start>1</start>
+					<end>9</end>
+					<loop>true</loop>
+				</moving_state>
+				<special_state>
+					<start>9</start>	
+					<end>13</end>
+				</special_state>
+			</states>
+		</interactiveObject>
+
+	</interactiveObjects>
+
+</level>

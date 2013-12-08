@@ -1,0 +1,156 @@
+<!-- XML file for the fisherman level -->
+<level>
+	<width>3000</width>
+	<height>768</height>
+
+	<camera>
+		<x>3800</x>
+		<y>400</y>
+	</camera>
+
+	<background>
+		<texture>Assets/level_fisherman/background</texture>
+	</background>
+
+	<music>Assets/SFX_Music/MortisFisherman</music>
+
+	<door>
+		<x>2769</x>
+		<y>100</y>
+		<key>door</key>
+		<open>true</open>
+	</door>
+
+	<platforms>
+		<platform>
+			<x>0</x>
+			<y>443</y>
+			<texture>Assets/global/platform_large</texture>
+			<boundingHeight>500</boundingHeight>
+			<boundingWidth>1100</boundingWidth>
+			<boundingOffsetX>0</boundingOffsetX>
+			<boundingOffsetY>100</boundingOffsetY>
+		</platform>
+
+		<platform>
+			<x>2497</x>
+			<y>430</y>
+			<texture>Assets/global/platform_large</texture>
+			<boundingHeight>500</boundingHeight>
+			<boundingWidth>1100</boundingWidth>
+			<boundingOffsetX>0</boundingOffsetX>
+			<boundingOffsetY>100</boundingOffsetY>
+		</platform>
+	</platforms>
+
+	<player>
+		<x>16</x>
+		<y>266</y>
+		<texture>Assets/global/death_dave</texture>
+	</player>
+
+	<interactiveObjects>
+		<interactiveObject>
+			<key>fisherman</key>
+			<alive>true</alive>
+			<x>850</x>
+			<y>200</y>
+			<alwaysCollide>true</alwaysCollide>
+			
+			<scale>0.5</scale>
+			<key>fisherman</key>
+			<boundingOffsetY>100</boundingOffsetY>
+			<texture>Assets/level_fisherman/fisherman/fisherman</texture>
+			<states>
+				<sheet_width>3</sheet_width>
+				<sheet_height>2</sheet_height>
+				<alive_state>
+					<start>0</start>
+					<end>0</end>
+					<loop>false</loop>
+				</alive_state>
+				<dead_state>
+					<start>5</start>
+					<end>5</end>
+					<loop>false</loop>
+				</dead_state>
+				<transition_state>
+					<start>2</start>
+					<end>5</end>
+					<loop>false</loop>
+				</transition_state>
+				<moving_state>
+					<start>2</start>
+					<end>5</end>
+					<loop>true</loop>
+				</moving_state>
+			</states>
+
+			<behaviors>
+				<behavior requireAll="true" oneTime="true">
+					<trigger type="LifeTrigger" objectToMonitor	="fisherman" triggerOnAlive="false"  />
+					
+					<response type="MoveToTargetResponse" moveToTargetType="MoveToTargetVector" x="1200" y="720" endOnClose="True"/>	
+				</behavior>
+				
+				<behavior requireAll="true" oneTime="true">
+					<trigger type="XGreaterThanTrigger" x="1150"  />
+					<trigger type="LifeTrigger" objectToMonitor	="fisherman" triggerOnAlive="true"  />
+					
+					<response type="MoveToTargetResponse" moveToTargetType="MoveToTargetVector" x="1700" y="720" endOnClose="True"/>	
+					<response type="LifeChangingResponse" setLifeTo="False" />
+				</behavior>
+				
+				<behavior requireAll="true" oneTime="true">
+					<trigger type="XGreaterThanTrigger" x="1650"  />
+					<trigger type="LifeTrigger" objectToMonitor	="fisherman" triggerOnAlive="true"  />
+					
+					<response type="MoveToTargetResponse" moveToTargetType="MoveToTargetVector" x="2200" y="720" endOnClose="True"/>	
+					<response type="LifeChangingResponse" setLifeTo="False" />
+				</behavior>
+			</behaviors>
+		</interactiveObject>
+
+		<interactiveObject>
+			<key>fish</key>
+			<alive>true</alive>
+			<x>493</x>
+			<y>450</y>
+			<scale>0.8</scale>
+			<texture>Assets/level_fisherman/fish</texture>
+			<states>
+				<sheet_width>2</sheet_width>
+				<sheet_height>3</sheet_height>
+				<alive_state>
+					<start>0</start>
+					<end>4</end>
+					<loop>true</loop>
+				</alive_state>
+				<dead_state>
+					<start>4</start>
+					<end>4</end>
+					<loop>false</loop>
+				</dead_state>
+			</states>
+		</interactiveObject>
+	</interactiveObjects>
+
+	<effect>
+		<name>WaterShader</name>
+		<technique>WaterTechnique</technique>
+		<parameters>
+			<parameter>
+				<name>Orthographic</name>
+				<value>OrthographicMatrix</value>
+			</parameter>
+			<parameter>
+				<name>TotalTime</name>
+				<value>TotalTimeFloat</value>
+			</parameter>
+			<parameter>
+				<name>Offset</name>
+				<value>OffsetVector2</value>
+			</parameter>
+		</parameters>
+	</effect>
+</level>

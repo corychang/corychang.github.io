@@ -11,11 +11,19 @@ $(window).load(function() {
 	var image1Top = $("<img src='assets/mortis.jpg' alt='Colored image of Death next to a boy and his turtle.'>");
 	var image1Bottom = $("<img src='assets/mortis_bw.jpg' alt='Black and white image of Death next to a boy and his turtle.'>");
 
+	var modal1Button = MortisButton();
+	modal1Button.css("float", "right");
+	modal1Button.css("margin-right", "20px");
+
 	var modal1Content = [
-		$("<p>Under Construction</p>"),
+		$("<p>In this game, the player takes on the role of Death. The player uses Death's powers to take and give life from objects on the scene in order to get to the door on the scene. Unfortunately, Death cannot physically interact with the world, and so he must manipulate the environment in order to open the door and make his way to the end. He is also limited in that he can only interact with elements near him. The player uses WASD controls to move, and a mouse press to take/give life.</p>"),
+		$("<p>For this project, I acted as the project lead. My responsibilities in this role revolved around directing the vision of the project, and managing our group of roughly sixteen people. I had to make sure that we were keeping with our schedule, adjusting our goals when needed, and ensuring that people always had work to do that they enjoyed working on. I also had to ensure that the different components of design, art, and programming worked well and would fit together nicely as we consolidated work.</p>"),
+		$("<p>While I had less of a programming role for this project than I typically do, I made higher level design decisions of the code base. For example, I made general decisions on how functions such as collision detection or level loading should work.</p>"),
+		$("<p>My last role on this project was as a lead designer for the levels. I worked with another person to create the five levels currently present in the game. Since we were making this game from the ground up, we did not have the time to implement too many levels, giving me time to properly address all of the needs for the project.</p>"),
+		$("<p>Currently, the last (fifth) level is not possible to beat, since we didn't have the time to completely implement the level. Also, the Mac download of this game does not have the shaders for our water effects properly implemented and requires the Mono Framerwork to run.</p>"),
 	]
 
-	var modal1 = Modal("myModal1", "Mortis", modal1Content);
+	var modal1 = Modal("myModal1", "Mortis", modal1Content, modal1Button);
 	var hoverImage1 = CreateHoverImageForModal(image1Top, image1Bottom, modal1);
 	var image1 = new CarouselItem(hoverImage1,
 								  "Mortis",

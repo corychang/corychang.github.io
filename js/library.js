@@ -13,6 +13,9 @@ var tommyWasAloneMac = "Tommy-Was-Alone-files/TommyWasAloneMac.zip";
 var tommyWasAloneWindows = "Tommy-Was-Alone-files/TommyWasAloneWindows.zip";
 var tommyWasAloneLinux = "Tommy-Was-Alone-files/TommyWasAloneLinux.zip";
 
+var mortisMac = "Mortis-files/MortisMac.zip";
+var mortisWindows = "Mortis-files/MortisWindows.zip";
+
 /*
  * Resize all of the images inside of the carousel.
  */
@@ -91,6 +94,24 @@ function TommyWasAloneButton() {
 	if (os === "LINUX") {
 		link = tommyWasAloneLinux;
 		text = "Download for Linux";
+	}
+	return Button(link, text, "Downloading...");
+}
+
+/*
+ * Creates a download link for Tommy Was Alone.
+ */
+function MortisButton() {
+	var os = DetectOS();
+	var link;
+	var text;
+	if (os === "MAC") {
+		link = mortisMac;
+		text = "Download for Mac";
+	}
+	if (os === "WIN") {
+		link = mortisWindows;
+		text = "Download for Windows";
 	}
 	return Button(link, text, "Downloading...");
 }

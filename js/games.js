@@ -16,7 +16,7 @@ $(window).load(function() {
 	modal1Button.css("margin-right", "20px");
 
 	var modal1Content = [
-		$("<p>In this game, the player takes on the role of Death, using Death's powers to take and give life from objects on the scene in order to get to the door. Unfortunately, Death cannot physically interact with the world, and so he must manipulate the environment in order to open the door and make his way to the end. He is also limited in that he can only interact with elements near him. The player uses WASD controls to move, and a mouse press to take/give life.</p>"),
+		$("<p>Mortis received Game Creation Society gold for the fall semester of 2013. In this game, the player takes on the role of Death, using Death's powers to take and give life from objects on the scene in order to get to the door. Unfortunately, Death cannot physically interact with the world, and so he must manipulate the environment in order to open the door and make his way to the end. He is also limited in that he can only interact with elements near him. The player uses WASD controls to move, and a mouse press to take/give life.</p>"),
 		$("<p>For Mortis, I acted as the project lead. My responsibilities in this role revolved around directing the vision of the project and managing our group of roughly sixteen people. I had to make sure that we were keeping with our schedule, adjusting our goals when needed, and ensuring that people always had work to do that they enjoyed working on. I also had to ensure that the different components of design, art, and programming worked well and would fit together nicely as we consolidated work.</p>"),
 		$("<p>While I had less of a programming role for this project than I typically do, I made higher level design decisions of the code base. For example, I made general decisions on how functions such as collision detection or level loading should work.</p>"),
 		$("<p>My last role on this project was as a lead designer for the levels. I worked with another person to create the five levels currently present in the game. Since we were making this game from the ground up, we did not have the time to implement too many levels, giving me time to properly address all of the needs for the project.</p>"),
@@ -65,10 +65,11 @@ $(window).load(function() {
 	var image2_1 = $("<img src='assets/outfit_swap_screen.jpg' alt='Image of the player talking to Hobo Ozzie in a fast food restaurant.'>");
 
 	var modal2Content = [
-		$("<p>A link to the game is above. In the game, the player explores the world, talking to other characters to find out what they like or dislike. The dialogue gives the player hints as to what role the NPC really wants to fill. If the player is currently a role that can swap with the NPC, the player can swap and change roles. The ultimate goal for the player is to go from burger flipper to president, through one of multiple paths.</p>"),
+		$("<p>In the game, the player explores the world, talking to other characters to find out what they like or dislike. The dialogue gives the player hints as to what role the NPC really wants to fill. If the player is currently a role that can swap with the NPC, the player can swap and change roles. The ultimate goal for the player is to go from burger flipper to president, through one of multiple paths.</p>"),
 		$("<p>The game was made with LimeJS for Javascript. One of the main goals for the game was to make it accessible for many devices, such as browser, tablet, and phone. This lead to many interesting challenges when designing simple controls using mainly clicks and taps, as well as creating a responsive layout that is usable on a variety of devices.</p>"),
 		$("<p>My specific role included programming core funcationality in the game. For example, I was in charge of dialogue logic and boxes as well as the actual swapping of outfits. I also worked on character movement and swapping animations.</p>"),
 		$("<p>Outfit Swap was awarded Game Creation Society Gold, given to games which represent the best project of the semester from Carnegie Mellon's Game Creation Society organization.</p>"),
+		$("<p>A link to the game is above.</p>"),
 		image2_1,
 	]
 

@@ -28,7 +28,7 @@ $(window).load(function() {
 	var hoverImage3 = CreateHoverImageForModal(image3Top, image3Bottom, modal3);
 	var image3 = new CarouselItem(hoverImage3,
 								  "15-466: Game Programming",
-								  "This course covers many topics relevant to computer games, such as A.I., collision detection, networking, path finding, and much more. The class has a strong programming focus and is taught using the Unity engine.");
+								  "This course covers many topics relevant to computer games, such as A.I., collision detection, networking, path finding, and much more. The class has a strong programming focus and is taught using the Unity engine. Click for more details...");
 
 
 
@@ -64,7 +64,7 @@ $(window).load(function() {
 	var hoverImage = CreateHoverImageForModal(image1Top, image1Bottom, modal1);
 	var image1 = new CarouselItem(hoverImage,
 								  "15-462: Computer Graphics",
-								  "A comprehensive introduction to computer graphics. Topics include image processing, geometric transformations, shading, and ray tracing.");
+								  "A comprehensive introduction to computer graphics. Topics include image processing, geometric transformations, shading, and ray tracing. Click for more details...");
 
 	// Content for the 05-818 modal.
 	var image2Top = $("<img src='assets/05_818.jpg' alt='Colored image of a drunk call scene.'>");
@@ -84,7 +84,7 @@ $(window).load(function() {
 	var hoverImage2 = CreateHoverImageForModal(image2Top, image2Bottom, modal2);
 	var image2 = new CarouselItem(hoverImage2,
 								  "05-818: Design Educational Games",
-								  "Covers design for games and pedagogy. The course covers performing user research, analyzing other educational games, and ends with a project to create an educational game.");
+								  "Covers design for games and pedagogy. The course covers performing user research, analyzing other educational games, and ends with a project to create an educational game. Click for more details...");
 
 	// TODO: Add 15-466: Game Programming!!!!!!!!!!!!
 

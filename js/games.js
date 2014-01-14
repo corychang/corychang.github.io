@@ -27,7 +27,7 @@ $(window).load(function() {
 	var hoverImage1 = CreateHoverImageForModal(image1Top, image1Bottom, modal1);
 	var image1 = new CarouselItem(hoverImage1,
 								  "Mortis",
-								  "A puzzle platformer where the central game mechanic revolves around transfering life between objects in the scene. I worked as the project lead on this game.");
+								  "A puzzle platformer where the central game mechanic revolves around transfering life between objects in the scene. I worked as the project lead on this game. Click for more details...");
 
 	// Content for Tommy Was Alone.
 	var image4Top = $("<img src='assets/tommywasalone.jpg' alt='Colored image of a cube world.'>");
@@ -49,7 +49,7 @@ $(window).load(function() {
 	var hoverImage4 = CreateHoverImageForModal(image4Top, image4Bottom, modal4);
 	var image4 = new CarouselItem(hoverImage4,
 								  "Tommy Was Alone",
-								  "A first person stealth survival game. I worked as a programmer on the project.");
+								  "A first person stealth survival game. I worked as a programmer on the project. Click for more details...");
 
 
 
@@ -77,7 +77,7 @@ $(window).load(function() {
 	var hoverImage2 = CreateHoverImageForModal(image2Top, image2Bottom, modal2);
 	var image2 = new CarouselItem(hoverImage2,
 								  "Outfit Swap",
-								  "A puzzle adventure game where the player swaps roles with other characters with the goal of becoming the president. I worked as a programmer on the project.");
+								  "A puzzle adventure game where the player swaps roles with other characters with the goal of becoming the president. I worked as a programmer on the project. Click for more details...");
 
 	// Content for the EMT Game modal.
 	var image3Top = $("<img src='assets/05_818.jpg' alt='Colored image of a drunk call scene.'>");
@@ -103,7 +103,7 @@ $(window).load(function() {
 	var hoverImage3 = CreateHoverImageForModal(image3Top, image3Bottom, modal3);
 	var image3 = new CarouselItem(hoverImage3,
 								  "EMT Game",
-								  "A point-and-click adventure and visual novel game which simulates scenarios faced by real emergency medical technicians. I worked as the lead programmer on the project.");
+								  "A point-and-click adventure and visual novel game which simulates scenarios faced by real emergency medical technicians. I worked as the lead programmer on the project. Click for more details...");
 
 	// TODO: Add I'm not Comfortable with This!!!!
 

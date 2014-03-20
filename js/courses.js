@@ -25,8 +25,10 @@ $(window).load(function() {
 	]
 
 	var modal3 = Modal("myModal3", "15-466: Game Programming", modal3Content, modal3Button);
-	var hoverImage3 = CreateHoverImageForModal(image3Top, image3Bottom, modal3);
-	var image3 = new CarouselItem(hoverImage3,
+	//var hoverImage3 = CreateHoverImageForModal(image3Top, image3Bottom, modal3);
+	var image3 = new CarouselItem(image3Top,
+								  image3Bottom,
+								  modal3,
 								  "15-466: Game Programming",
 								  "This course covers many topics relevant to computer games, such as A.I., collision detection, networking, path finding, and much more. The class has a strong programming focus and is taught using the Unity engine. Click for more details...");
 
@@ -61,8 +63,10 @@ $(window).load(function() {
 	]
 
 	var modal1 = Modal("myModal1", "15-462: Computer Graphics", modal1Content);
-	var hoverImage = CreateHoverImageForModal(image1Top, image1Bottom, modal1);
-	var image1 = new CarouselItem(hoverImage,
+	//var hoverImage = CreateHoverImageForModal(image1Top, image1Bottom, modal1);
+	var image1 = new CarouselItem(image1Top,
+								  image1Bottom,
+								  modal1,
 								  "15-462: Computer Graphics",
 								  "A comprehensive introduction to computer graphics. Topics include image processing, geometric transformations, shading, and ray tracing. Click for more details...");
 
@@ -81,8 +85,10 @@ $(window).load(function() {
 	]
 
 	var modal2 = Modal("myModal2", "05-818: Design Educational Games", modal2Content, modal2Button);
-	var hoverImage2 = CreateHoverImageForModal(image2Top, image2Bottom, modal2);
-	var image2 = new CarouselItem(hoverImage2,
+	//var hoverImage2 = CreateHoverImageForModal(image2Top, image2Bottom, modal2);
+	var image2 = new CarouselItem(image2Top,
+								  image2Bottom,
+								  modal2,
 								  "05-818: Design Educational Games",
 								  "Covers design for games and pedagogy. The course covers performing user research, analyzing other educational games, and ends with a project to create an educational game. Click for more details...");
 

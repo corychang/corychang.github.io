@@ -175,14 +175,40 @@ function MortisButton() {
 /*
  * Object providing information for carousel.
  */
- function CarouselItem(image, title, caption) {
- 	this.image = image;
+ function CarouselItem(imageTop, imageBottom, modal, title, caption) {
+ 	//this.image = image;
+ 	this.image = $("<div></div>");
+ 	imageTop.css("position", "relative");
+	imageBottom.css("position", "absolute");
+	this.image.append(imageBottom);
+	this.image.append(imageTop);
+
  	this.title = title;
  	this.caption = caption;
 
+ 	this.clickFun = function() {
+		$("#carousel-example-generic").carousel('pause');
+		modal.modal('show');
+		console.log(title);
+	}
+
+	this.hoverOutFun = function() {
+			imageTop.stop().animate({"opacity": "0"}, "medium");
+			$(".carousel-caption-text").stop().animate({"opacity": "1"}, "medium");
+	}
+
+	this.hoverOverFun = function() {
+			imageTop.stop().animate({"opacity": "1"}, "medium");
+			$(".carousel-caption-text").stop().animate({"opacity": "0"}, "medium");
+	}
+
  	this.resize = function(width, height) {
- 		this.image.resize(width, height);
+ 		//this.image.resize(width, height);
+ 		imageTop.width(width);
+		imageBottom.width(width);
  	}
+
+ 	//this.image.css("cursor", "pointer");
  }
 
  /*
@@ -214,9 +240,18 @@ function Carousel(itemList) {
 		caption.append(captionText);
 		captionText.css("opacity", "0");
 		itemDiv.append(caption);
+
+		itemDiv.click(itemList[i].clickFun);
+		itemDiv.hover(
+			itemList[i].hoverOutFun,
+			itemList[i].hoverOverFun
+		);
+
 		carouselInner.append(itemDiv);
 	}
 	carousel.append(carouselInner);
+
+	carousel.css("cursor", "pointer");
 
 	// Controls.
 	var left = $("<a class='left carousel-control' href='#carousel-example-generic' data-slide='prev'></a>");
@@ -227,46 +262,6 @@ function Carousel(itemList) {
 	carousel.append(right);
 
 	return carousel;
-}
-
-/*
- * Create an image with hover transitions used with modals.
- */
-function CreateHoverImageForModal(imageTop, imageBottom, modal) {
-	var ans = $("<div></div>");
-	imageTop.css("position", "relative");
-	imageBottom.css("position", "absolute");
-	ans.append(imageBottom);
-	ans.append(imageTop);
-
-	ans.click(function() {
-		$("#carousel-example-generic").carousel('pause');
-		modal.modal('show');
-	});
-
-	ans.hover(
-		function() {
-			imageTop.stop().animate({"opacity": "0"}, "medium");
-			$(".carousel-caption-text").stop().animate({"opacity": "1"}, "medium");
-		},
-		function() {
-			imageTop.stop().animate({"opacity": "1"}, "medium");
-			$(".carousel-caption-text").stop().animate({"opacity": "0"}, "medium");
-		}
-	);
-
-	ans.resize = function(width, height) {
-		imageTop.width(width);
-		imageBottom.width(width);
-		//if (height !== undefined && height < imageTop.height()) {
-		//	imageTop.height(height);
-		//	imageBottom.height(height);
-		//}
-	}
-
-	ans.css("cursor", "pointer");
-
-	return ans;
 }
 
 /*

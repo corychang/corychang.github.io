@@ -15,12 +15,21 @@ $(window).load(function() {
 	modal1Button.css("float", "right");
 	modal1Button.css("margin-right", "20px");
 
+	var image1_1 = $("<img src='assets/mortis1.jpg' alt='Death taking life from a kid on the screen.'>");
+	var image1_2 = $("<img src='assets/mortis2.jpg' alt='Death jumping through platforms using mushrooms.'>");
+	var image1_3 = $("<img src='assets/mortis3.jpg' alt='Death making his way across a lake.'>");
+	var image1_4 = $("<img src='assets/mortis4.jpg' alt='Death in a bizarre hospital scene.'>");
+
 	var modal1Content = [
 		$("<p>Mortis received Game Creation Society gold for the fall semester of 2013. In this game, the player takes on the role of Death, using Death's powers to take and give life from objects on the scene in order to get to the door. Unfortunately, Death cannot physically interact with the world, and so he must manipulate the environment in order to open the door and make his way to the end. He is also limited in that he can only interact with elements near him. The player uses WASD controls to move, and a mouse press to take/give life.</p>"),
 		$("<p>For Mortis, I acted as the project lead. My responsibilities in this role revolved around directing the vision of the project and managing our group of roughly sixteen people. I had to make sure that we were keeping with our schedule, adjusting our goals when needed, and ensuring that people always had work to do that they enjoyed working on. I also had to ensure that the different components of design, art, and programming worked well and would fit together nicely as we consolidated work.</p>"),
 		$("<p>While I had less of a programming role for this project than I typically do, I made higher level design decisions of the code base. For example, I made general decisions on how functions such as collision detection or level loading should work.</p>"),
 		$("<p>My last role on this project was as a lead designer for the levels. I worked with another person to create the five levels currently present in the game. Since we were making this game from the ground up, we did not have the time to implement too many levels, giving me time to properly address all of the needs for the project.</p>"),
 		$("<p>Currently, the last (fifth) level is not possible to beat, since we didn't have the time to completely implement the level. Also, the Mac download of this game does not have the shaders for our water effects properly implemented and requires the Mono Framerwork to run. The Windows version requires the <a href='http://www.microsoft.com/en-us/download/details.aspx?id=20914' target='_blank'>proper Windows frameworks</a> installed to run.</p>"),
+		image1_1,
+		image1_2,
+		image1_3,
+		image1_4,
 	]
 
 	var modal1 = Modal("myModal1", "Mortis", modal1Content, modal1Button);
@@ -116,6 +125,7 @@ $(window).load(function() {
 	// TODO: Add I'm not Comfortable with This!!!!
 
 	carousel_list = [image1, image4, image2, image3];
+	image_list1 = [image1_1, image1_2, image1_3, image1_4];
 	image_list2 = [image2_1];
 	image_list3 = [image3_1, image3_2];
 
@@ -126,6 +136,11 @@ $(window).load(function() {
 
 	//$("#carousel-example-generic").height(Math.min($(window).height() - 120, 551));
 	resizeAll(carousel_list);
+	modal1.on('shown.bs.modal', function() {
+		for (var i = 0; i < image_list1.length; i++) {
+			image_list1[i].width($("#myModal1").find(".modal-body").width() / 2);
+		}
+	});
 	modal2.on('shown.bs.modal', function() {
 		for (var i = 0; i < image_list2.length; i++) {
 			image_list2[i].width($("#myModal2").find(".modal-body").width());
@@ -143,6 +158,9 @@ $(window).load(function() {
 $(window).resize(function() {
 	//$("#carousel-example-generic").height(Math.min($(window).height() - 120, 551));
 	resizeAll(carousel_list);
+	for (var i = 0; i < image_list1.length; i++) {
+		image_list1[i].width($("#myModal1").find(".modal-body").width() / 2);
+	}
 	for (var i = 0; i < image_list2.length; i++) {
 		image_list2[i].width($("#myModal2").find(".modal-body").width());
 	}

@@ -6,6 +6,30 @@ $(window).load(function() {
 	$("body").prepend(MenuBuffer());
 	$("body").prepend(Menu());
 
+	// Content for 15-465.
+	var image4Top = $("<img src='assets/15_465.jpg' alt='Colored image of a golf and soccer ball.'>");
+	var image4Bottom = $("<img src='assets/15_465_bw.jpg' alt='Black and white image of a golf and soccer ball.'>");
+
+	var modal4Content = [
+		$("<p>Animation Art and Technology is a project course that is cross listed bewteen the School of Art and the School of Computer Science. This emphasizes the interdisciplary nature of the class, combining technology as it is used to enhance a piece of animation. The course is taught primarily through Maya.</p>"),
+		$("<p>The first assignment acted as an introduction to Maya, and were meant to experiment with deformers. Important tasks for this assignment include modeling, lighting, and animation. I decided to try to tell a concise story involving the meeting of a golf ball and a soccer ball.</p>"),
+		$("<div style='width: 640px; height: 360px; margin: 0 auto;'><iframe width='640' height='360' src='http://www.youtube.com/embed/x4EmUnGD8hs' frameborder='0' allowfullscreen align='center'></iframe></div>"),
+		$("<br/>"),
+		$("<p>The second assignment was to create a walk cycle. Important tasks for this assignment include modeling, rigging, painting skin weight, and animation. Here, I created a robot and animated the sequence of it turning on and learning how to walk.</p>"),
+		$("<div style='width: 640px; height: 360px; margin: 0 auto;'><iframe width='640' height='360' src='http://www.youtube.com/embed/-8R_Xo4uk-8' frameborder='0' allowfullscreen align='center'></iframe></div>"),
+		$("<br/>"),
+		$("<p>The final project was a group assignment in a team of four. For this assignment, I looked into cloth simulation and how it could be applied to our project. I also worked on animation and many of the cameras. All of the group members contributed in shaping the story elements and storyboard, deciding things such as camera angles.</p>"),
+		$("<div style='width: 640px; height: 360px; margin: 0 auto;'><iframe width='640' height='360' src='http://www.youtube.com/embed/13pq4AaqLsk' frameborder='0' allowfullscreen align='center'></iframe></div>"),
+	]
+
+	var modal4 = Modal("myModal4", "15-465: Animation Art and Technology", modal4Content);
+	//var hoverImage3 = CreateHoverImageForModal(image3Top, image3Bottom, modal3);
+	var image4 = new CarouselItem(image4Top,
+								  image4Bottom,
+								  modal4,
+								  "15-465: Animation Art and Technology",
+								  "This course covered animation principles and relevant technology, such as cloth simulation and motion capture. Click for more details...");
+
 	// Content for 15-466.
 	var image3Top = $("<img src='assets/15_466.jpg' alt='Colored image of chess board.'>");
 	var image3Bottom = $("<img src='assets/15_466_bw.jpg' alt='Black and white image of chess board.'>");
@@ -31,11 +55,6 @@ $(window).load(function() {
 								  modal3,
 								  "15-466: Game Programming",
 								  "This course covers many topics relevant to computer games, such as A.I., collision detection, networking, path finding, and much more. The class has a strong programming focus and is taught using the Unity engine. Click for more details...");
-
-
-
-
-
 
 	// Content for the 15-462 modal.
 	var image1Top = $("<img src='assets/15_462.jpg' alt='Colored image of water simulation.'>");
@@ -92,10 +111,8 @@ $(window).load(function() {
 								  "05-818: Design Educational Games",
 								  "Covers design for games and pedagogy. The course covers performing user research, analyzing other educational games, and ends with a project to create an educational game. Click for more details...");
 
-	// TODO: Add 15-466: Game Programming!!!!!!!!!!!!
-
 	slider_list1 = [slider1_1, slider1_2, slider1_3];
-	carousel_list = [image3, image1, image2];
+	carousel_list = [image4, image3, image1, image2];
 
 	var carousel = Carousel(carousel_list);
 

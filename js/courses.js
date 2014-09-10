@@ -14,12 +14,15 @@ $(window).load(function() {
 		$("<p>Animation Art and Technology is a project course that is cross listed bewteen the School of Art and the School of Computer Science. This emphasizes the interdisciplary nature of the class, combining technology as it is used to enhance a piece of animation. The course is taught primarily through Maya.</p>"),
 		$("<p>The first assignment acted as an introduction to Maya, and were meant to experiment with deformers. Important tasks for this assignment include modeling, lighting, and animation. I decided to try to tell a concise story involving the meeting of a golf ball and a soccer ball.</p>"),
 		$("<div style='width: 640px; height: 360px; margin: 0 auto;'><iframe width='640' height='360' src='http://www.youtube.com/embed/x4EmUnGD8hs' frameborder='0' allowfullscreen align='center'></iframe></div>"),
+		$("<p><center><a href='https://www.youtube.com/watch?v=x4EmUnGD8hs'>link</a></center></p>"),
 		$("<br/>"),
 		$("<p>The second assignment was to create a walk cycle. Important tasks for this assignment include modeling, rigging, painting skin weight, and animation. Here, I created a robot and animated the sequence of it turning on and learning how to walk.</p>"),
 		$("<div style='width: 640px; height: 360px; margin: 0 auto;'><iframe width='640' height='360' src='http://www.youtube.com/embed/-8R_Xo4uk-8' frameborder='0' allowfullscreen align='center'></iframe></div>"),
+		$("<p><center><a href='https://www.youtube.com/watch?v=-8R_Xo4uk-8'>link</a></center></p>"),
 		$("<br/>"),
 		$("<p>The final project was a group assignment in a team of four. For this assignment, I looked into cloth simulation and how it could be applied to our project. I also worked on animation and many of the cameras. All of the group members contributed in shaping the story elements and storyboard, deciding things such as camera angles.</p>"),
 		$("<div style='width: 640px; height: 360px; margin: 0 auto;'><iframe width='640' height='360' src='http://www.youtube.com/embed/13pq4AaqLsk' frameborder='0' allowfullscreen align='center'></iframe></div>"),
+		$("<p><center><a href='https://www.youtube.com/watch?v=13pq4AaqLsk'>link</a></center></p>"),
 		$("<br/>"),
 		$("<p>I worked on this project with Tyler Porten, Susan Wang, and Zhen Geng with music by Kristian Tchetchko.</p>")
 	]
@@ -46,6 +49,7 @@ $(window).load(function() {
 		$("<p>My third lab is a checkers game with an A.I. The computer runs alpha-beta pruning to choose which move to make next. There is also networking to provide in-game chat. At the moment, the computer is the only one that talks to the player, but the server can handle multiple players chatting simultaneously.</p>"),
 		$("<p>Below is a video demonstrating the first three labs.</p>"),
 		$("<div style='width: 640px; height: 360px; margin: 0 auto;'><iframe width='640' height='360' src='http://www.youtube.com/embed/Rus5xqzbVpw' frameborder='0' allowfullscreen align='center'></iframe></div>"),
+		$("<p><center><a href='https://www.youtube.com/watch?v=Rus5xqzbVpw'>link</a></center></p>"),
 		$("<br/>"),
 		$("<p>More information for my final project, \"Tommy Was Alone\" can be found on the \"Games\" tab. There is also a download link at the top.</p>"),
 	]
@@ -81,8 +85,7 @@ $(window).load(function() {
 		$("<br/>"),
 		$("<p>The final lab was a simple phsyics simulator, modeling collisions, and simple gravity and spring forces. Our simulator also had to simulate rotation and torque. We used a Runge-Kutta approximation for realistic effects.</p>"),
 		$("<div style='width: 640px; height: 360px; margin: 0 auto;'><iframe width='640' height='360' src='http://www.youtube.com/embed/CAG40Zupr9g' frameborder='0' allowfullscreen align='center'></iframe></div>"),
-		$("<br/>"),
-		$("blah"),
+		$("<p><center><a href='https://www.youtube.com/watch?v=CAG40Zupr9g'>link</a></center></p>"),
 	]
 
 	var modal1 = Modal("myModal1", "15-462: Computer Graphics", modal1Content);

@@ -15,6 +15,8 @@ $(window).load(function() {
 	content.append($("<p>In my free time, I enjoy working on game projects. A sampling of my work can be found under the \"Games\" tab. A selection of interesting courses that I've taken can also be found under \"Courses.\"</p>"));
 	content.append($("<p>I also really enjoy film. Currently, my favorite movie is <i>The Shawshank Redemption</i>, and my favorite TV series is <i>The Wire</i>.</p>"));
 	content.append($("<p>Contact: <a href='mailto:changcory@gmail.com'>changcory@gmail.com</a></p>"));
+	content.append($("<br/>"));
+	content.append($("<p><i>Last updated 9/10/14</i></p>"));
 	//content.width(580);
 	content.css("max-width", "600px");
 	content.css("width", "60%");

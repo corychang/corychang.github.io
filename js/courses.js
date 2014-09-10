@@ -20,6 +20,7 @@ $(window).load(function() {
 		$("<br/>"),
 		$("<p>The final project was a group assignment in a team of four. For this assignment, I looked into cloth simulation and how it could be applied to our project. I also worked on animation and many of the cameras. All of the group members contributed in shaping the story elements and storyboard, deciding things such as camera angles.</p>"),
 		$("<div style='width: 640px; height: 360px; margin: 0 auto;'><iframe width='640' height='360' src='http://www.youtube.com/embed/13pq4AaqLsk' frameborder='0' allowfullscreen align='center'></iframe></div>"),
+		$("<br/>"),
 	]
 
 	var modal4 = Modal("myModal4", "15-465: Animation Art and Technology", modal4Content);
@@ -79,6 +80,7 @@ $(window).load(function() {
 		$("<br/>"),
 		$("<p>The final lab was a simple phsyics simulator, modeling collisions, and simple gravity and spring forces. Our simulator also had to simulate rotation and torque. We used a Runge-Kutta approximation for realistic effects.</p>"),
 		$("<div style='width: 640px; height: 360px; margin: 0 auto;'><iframe width='640' height='360' src='http://www.youtube.com/embed/CAG40Zupr9g' frameborder='0' allowfullscreen align='center'></iframe></div>"),
+		$("<br/>"),
 	]
 
 	var modal1 = Modal("myModal1", "15-462: Computer Graphics", modal1Content);
